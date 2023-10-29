@@ -13,10 +13,10 @@ document.getElementById('btn-submit').addEventListener('click',function(){
   //DANGER: Do NOT VERIFY email password on the client side
   // step-4: Verify and email .com
   if(email==='sontan@baap.com' && password === 'secret'){
-    console.log('valid user')
+    window.location.href = 'bank.html'
   }
   else{
-    console.log('Invalid user')
+    alert('Invalid password or email.')
   }
   
 })
